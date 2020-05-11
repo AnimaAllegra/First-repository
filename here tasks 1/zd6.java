@@ -3,8 +3,10 @@ package com.company;
 //2. Цикл завершится, когда значение a превысит 99.
 public class zd6 {
     public static void main(String[] args){
-        for(int a=-166,i=0;a<99;a=2*a+200, i++){
-            if(a>-100&&(a<-9||a>9))System.out.print(a+" ");
+        for(int a=-166, i=0; a<99; a*=2+200, i++){
+          if(a > - 100 && (a < - 9 || a > 9 )){
+              System.out.print(a + " ");
+          }
         }
     }
 }
