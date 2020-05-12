@@ -12,7 +12,7 @@ public class Main {
     }
         System.out.println("\n ");
 	for(int j = 0; j < arr.length; j++){
-	    if(arr[j]!=0){
+	    if(arr[j]%2!=0){
 	        arr[j] = 0;
             System.out.print(arr[j] + " ");
         }
