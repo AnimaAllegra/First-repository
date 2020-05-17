@@ -5,17 +5,17 @@ package com.company;
 // Снова выведете массив на экран на отдельной строке.
 public class Main {
     public static void main(String[] args) {
-	int[] arr = new int[8];
-	for(int i = 0; i < arr.length; i++){
-	    arr[i] = 1 + (int) (Math.random()*10);
-        System.out.print(arr[i] + " ");
-    }
-        System.out.println("\n ");
-	for(int j = 0; j < arr.length; j++){
-	    if(arr[j]%2!=0){
-	        arr[j] = 0;
-            System.out.print(arr[j] + " ");
+        int[] arr = new int[10];
+        for(int i = 0; i < arr.length; i++){
+            arr[i] = 1 + (int) (Math.random()*10);
+            System.out.print(arr[i] + " ");
         }
-    }
+        System.out.println("\n ");
+        for(int j = 0; j < arr.length; j++){
+            if(j%2==0){
+                arr[j] = 0;
+            }
+            System.out.print(arr[j]+" ");
+        }
     }
 }
